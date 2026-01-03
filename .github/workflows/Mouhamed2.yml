@@ -1,0 +1,10 @@
+name: Testing github workflows
+
+on: push
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Mon deuxieme workflow'
+      - run: echo $HOSTNAME
